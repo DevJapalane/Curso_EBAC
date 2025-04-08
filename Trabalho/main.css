@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header { /* selecionei o filho direto do body, o header, mas apenas o filho direto dele, e nao o filho de outros, para poder selecionar o body em black mas não a data, pois a data esta em header, porem não um filho direto*/
+    background-color: black;
+    padding: 16px 0px;
+    color: #fff;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap; /* flex wrap usado para pular pra linha de baixo */
+    justify-content: space-between;/*justify-content = horizontal align | 
+    align-items = vertical align
+    flex-direction = espelhamento vertical e horizontal*/
+}
+
+.articles article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0px;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a { /* A = botão*/
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block; /*padrão do A é inline, então mudamos para inline-block*/
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p ,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.43)
+}
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f0eea9;
+}
+
+#economy .articles article a {
+    background-color: #bd811f;
+}
+
+#tecnologia {
+    background-color: rgba(176, 197, 239, 0.822);
+}
+
+#tecnologia .articles article a {
+    background-color: rgb(21, 15, 84);
+}
+
+
+#games {
+    background-color: rgb(242, 107, 107);
+}
+
+#games .articles article a {
+    background-color: rgb(228, 55, 55);
+}
