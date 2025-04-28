@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #43acb6;
+    border-radius: 5px;
+    background-color: black;
+    color: #43acb6;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#forms input::placeholder {
+    color: #43acb6;
+    opacity: 0.5;
+}
+#forms input:focus::placeholder {
+    color: #f60052;
+    opacity: 1; 
+}
+
+#forms input:focus {
+    outline: none;
+    border-color: #f60052;
+
+
+} /* Para remover as setinhas do input type number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f60052;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    background-color: #43acb6;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #f60052;
+    text-shadow: 2px 2px 4px #43acb6;
+}   
+
+.sucess-message {
+    background-color: #4eca54;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    text-shadow: #000000 2px 2px 4px;
+    border-radius: 10px;
+    outline: #43acb6 2px solid;
+    display: none;
+}
+
+.error-message {
+    background-color: #f60052;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    text-shadow:#000000 2px 2px 4px;
+    border-radius: 10px;
+    outline: #43acb6 2px solid;
+    display: none;
+}
+
+.equal-message {
+    background-color: #f60052;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    text-shadow:#000000 2px 2px 4px;
+    border-radius: 10px;
+    outline: #43acb6 2px solid;
+    display: none;
+}
